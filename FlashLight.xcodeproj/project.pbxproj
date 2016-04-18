@@ -15,6 +15,10 @@
 		5F8073A31CC3B4F90009EC15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F8073A11CC3B4F90009EC15 /* LaunchScreen.storyboard */; };
 		5F8073AE1CC3B4F90009EC15 /* FlashLightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8073AD1CC3B4F90009EC15 /* FlashLightTests.m */; };
 		5F8073B91CC3B4FA0009EC15 /* FlashLightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8073B81CC3B4FA0009EC15 /* FlashLightUITests.m */; };
+		5FF82ACA1CC4CDC200416EE8 /* LightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82AC81CC4CDC200416EE8 /* LightViewController.m */; };
+		5FF82ACB1CC4CDC200416EE8 /* LightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF82AC91CC4CDC200416EE8 /* LightViewController.xib */; };
+		5FF82ACE1CC4CE2500416EE8 /* powerbuttonoff.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FF82ACC1CC4CE2500416EE8 /* powerbuttonoff.png */; };
+		5FF82ACF1CC4CE2500416EE8 /* powerbuttonon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FF82ACD1CC4CE2500416EE8 /* powerbuttonon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		5F8073B41CC3B4FA0009EC15 /* FlashLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8073B81CC3B4FA0009EC15 /* FlashLightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlashLightUITests.m; sourceTree = "<group>"; };
 		5F8073BA1CC3B4FA0009EC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FF82AC71CC4CDC200416EE8 /* LightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightViewController.h; sourceTree = "<group>"; };
+		5FF82AC81CC4CDC200416EE8 /* LightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightViewController.m; sourceTree = "<group>"; };
+		5FF82AC91CC4CDC200416EE8 /* LightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LightViewController.xib; sourceTree = "<group>"; };
+		5FF82ACC1CC4CE2500416EE8 /* powerbuttonoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powerbuttonoff.png; sourceTree = "<group>"; };
+		5FF82ACD1CC4CE2500416EE8 /* powerbuttonon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powerbuttonon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,11 @@
 		5F8073921CC3B4F90009EC15 /* FlashLight */ = {
 			isa = PBXGroup;
 			children = (
+				5FF82ACC1CC4CE2500416EE8 /* powerbuttonoff.png */,
+				5FF82ACD1CC4CE2500416EE8 /* powerbuttonon.png */,
+				5FF82AC71CC4CDC200416EE8 /* LightViewController.h */,
+				5FF82AC81CC4CDC200416EE8 /* LightViewController.m */,
+				5FF82AC91CC4CDC200416EE8 /* LightViewController.xib */,
 				5F8073961CC3B4F90009EC15 /* AppDelegate.h */,
 				5F8073971CC3B4F90009EC15 /* AppDelegate.m */,
 				5F8073991CC3B4F90009EC15 /* ViewController.h */,
@@ -246,6 +260,9 @@
 				5F8073A31CC3B4F90009EC15 /* LaunchScreen.storyboard in Resources */,
 				5F8073A01CC3B4F90009EC15 /* Assets.xcassets in Resources */,
 				5F80739E1CC3B4F90009EC15 /* Main.storyboard in Resources */,
+				5FF82ACB1CC4CDC200416EE8 /* LightViewController.xib in Resources */,
+				5FF82ACF1CC4CE2500416EE8 /* powerbuttonon.png in Resources */,
+				5FF82ACE1CC4CE2500416EE8 /* powerbuttonoff.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +290,7 @@
 				5F80739B1CC3B4F90009EC15 /* ViewController.m in Sources */,
 				5F8073981CC3B4F90009EC15 /* AppDelegate.m in Sources */,
 				5F8073951CC3B4F90009EC15 /* main.m in Sources */,
+				5FF82ACA1CC4CDC200416EE8 /* LightViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlashLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meelive.FlashLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlashLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meelive.FlashLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +516,7 @@
 				5F8073BF1CC3B4FA0009EC15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F8073C01CC3B4FA0009EC15 /* Build configuration list for PBXNativeTarget "FlashLightTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +525,7 @@
 				5F8073C21CC3B4FA0009EC15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F8073C31CC3B4FA0009EC15 /* Build configuration list for PBXNativeTarget "FlashLightUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +534,7 @@
 				5F8073C51CC3B4FA0009EC15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
