@@ -8,7 +8,6 @@
 
 #import "LightViewController.h"
 
-#define FREQ 2
 static NSInteger sos = 0;
 
 @interface LightViewController () {
@@ -70,7 +69,7 @@ static NSInteger sos = 0;
 - (void)turnOn:(bool)update {
   [self torchOn:YES];
   if (update) {
-    [self btnImageName:@"powerbuttonon.png"];
+    //    [self btnImageName:@"powerbuttonon.png"];
   }
 }
 
@@ -97,7 +96,7 @@ static NSInteger sos = 0;
 - (void)turnOff:(bool)update {
   [self torchOn:NO];
   if (update) {
-    [self btnImageName:@"powerbuttonoff.png"];
+    //    [self btnImageName:@"powerbuttonoff.png"];
   }
 }
 
@@ -112,7 +111,7 @@ static NSInteger sos = 0;
   } else {
     _isLightOn = NO;
     [self turnOff:YES];
-    [self btnImageName:@"powerbuttonoff.png"];
+    //    [self btnImageName:@"powerbuttonoff.png"];
   }
 }
 
@@ -120,7 +119,7 @@ static NSInteger sos = 0;
   if (sender) {
     isFlashOn = YES;
   } else {
-    [self btnImageName:@"powerbuttonon.png"];
+    //    [self btnImageName:@"powerbuttonon.png"];
   }
   _isLightOn = YES;
   [self turnOn:YES];
@@ -131,10 +130,10 @@ static NSInteger sos = 0;
   if (!enableFlash) {
     _isLightOn = NO;
     [self turnOff:YES];
-    [self btnImageName:@"powerbuttonoff.png"];
+    //    [self btnImageName:@"powerbuttonoff.png"];
     _sosSwitch.on = enableFlash;
   } else {
-    [self btnImageName:@"powerbuttonon.png"];
+    //    [self btnImageName:@"powerbuttonon.png"];
     _sosSwitch.on = enableFlash;
     _isLightOn = YES;
     [self turnOn:YES];
@@ -144,7 +143,7 @@ static NSInteger sos = 0;
 }
 
 - (void)ledFlash {
-  double time = 1.0 / FREQ;
+  double time = 1.0 / 2;
 
   if (!enableFlash) {
     return;
@@ -200,7 +199,7 @@ static NSInteger sos = 0;
     if (sender) {
       isFlashOn = YES;
     } else {
-      [self btnImageName:@"powerbuttonon.png"];
+      //      [self btnImageName:@"powerbuttonon.png"];
     }
     _isLightOn = YES;
     [self sosLight];
